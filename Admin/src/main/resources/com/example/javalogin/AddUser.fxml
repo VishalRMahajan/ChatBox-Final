@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="851.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javalogin.AddUser">
+    <children>
+        <AnchorPane mouseTransparent="true" prefHeight="536.0" prefWidth="326.0" style="-fx-background-color: linear-gradient(#8000ff, #a600ff);">
+            <children>
+                <ImageView fitHeight="198.0" fitWidth="188.0" layoutX="39.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@abc.jpeg" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="536.0" prefWidth="648.0">
+            <children>
+                <Label layoutX="103.0" layoutY="166.0" prefHeight="22.0" prefWidth="120.0" text="User Username">
+                    <font>
+                        <Font name="Cambria" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="115.0" layoutY="235.0" text="Password">
+                    <font>
+                        <Font name="Cambria" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="tf_username" layoutX="251.0" layoutY="160.0" prefHeight="34.0" prefWidth="194.0" />
+                <TextField fx:id="tf_password" layoutX="251.0" layoutY="229.0" prefHeight="34.0" prefWidth="194.0" />
+                <Label layoutX="120.0" layoutY="307.0" text="Gender">
+                    <font>
+                        <Font name="Cambria" size="18.0" />
+                    </font>
+                </Label>
+                <RadioButton fx:id="rb_male" layoutX="259.0" layoutY="306.0" mnemonicParsing="false" text="Male">
+                    <font>
+                        <Font name="Cambria" size="18.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton fx:id="rb_female" layoutX="347.0" layoutY="306.0" mnemonicParsing="false" text="Female">
+                    <font>
+                        <Font name="Cambria" size="18.0" />
+                    </font>
+                </RadioButton>
+                <Button fx:id="button_adduser" layoutX="214.0" layoutY="358.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="161.0" style="-fx-background-color: linear-gradient(#a600ff, #8000ff); -fx-cursor: hand;" text="Add User" textFill="#f5f5f5">
+                    <font>
+                        <Font name="Cambria" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="button_back" layoutX="214.0" layoutY="436.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="161.0" style="-fx-background-color: linear-gradient(#a600ff, #8000ff); -fx-text-fill: white; -fx-background-insets: 0; -fx-background-radius: 5px; -fx-border-color: linear-gradient(#a600ff, #8000ff); -fx-border-width: 2px; -fx-border-radius: 5px; -fx-cursor: hand;" text="Go Back" textAlignment="CENTER">
+                    <font>
+                        <Font name="Cambria" size="20.0" />
+                    </font>
+                </Button>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="103.0" layoutY="91.0" prefHeight="34.0" prefWidth="363.0" text="ADD USER">
+                    <font>
+                        <Font name="Cambria Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="282.0" layoutY="406.0" text="OR">
+                    <font>
+                        <Font name="Cambria" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</HBox>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="851.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.Clientcontroller">
+   <children>
+      <AnchorPane prefHeight="536.0" prefWidth="868.0">
+         <children>
+            <Button fx:id="button_send" layoutX="658.0" layoutY="441.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="128.0" text="SEND" />
+            <TextField fx:id="tf_message" layoutX="67.0" layoutY="441.0" prefHeight="32.0" prefWidth="555.0" promptText="Enter your message here" />
+            <AnchorPane prefHeight="93.0" prefWidth="851.0" style="-fx-background-color: #a435f0;">
+               <children>
+                  <Button fx:id="button_logout1" layoutX="768.0" layoutY="34.0" mnemonicParsing="false" text="Logout" />
+                  <Label alignment="CENTER" layoutX="151.0" layoutY="31.0" prefHeight="32.0" prefWidth="535.0" text="Chat Messenger">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ScrollPane fx:id="sp_main" fitToWidth="true" layoutX="66.0" layoutY="120.0" prefHeight="294.0" prefWidth="720.0">
+              <content>
+                <VBox fx:id="vbox_messages" prefHeight="292.0" prefWidth="719.0" />
+              </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

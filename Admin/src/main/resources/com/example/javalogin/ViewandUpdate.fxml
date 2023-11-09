@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="851.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javalogin.ViewandUpdate">
+    <children>
+        <AnchorPane prefHeight="536.0" prefWidth="869.0">
+            <children>
+                <Button fx:id="button_back" layoutX="537.0" layoutY="459.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="162.0" style="-fx-background-color: linear-gradient(#a600ff, #8000ff); -fx-text-fill: white; -fx-background-insets: 0; -fx-background-radius: 5px; -fx-border-color: linear-gradient(#a600ff, #8000ff); -fx-border-width: 2px; -fx-border-radius: 5px; -fx-cursor: hand;" text="Main Menu" textAlignment="CENTER">
+                    <font>
+                        <Font name="Cambria" size="20.0" />
+                    </font>
+                </Button>
+
+                <Button fx:id="button_viewusers" layoutX="176.0" layoutY="459.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="132.0" style="-fx-background-color: linear-gradient(#a600ff, #8000ff); -fx-text-fill: white; -fx-background-insets: 0; -fx-background-radius: 5px; -fx-border-color: linear-gradient(#a600ff, #8000ff); -fx-border-width: 2px; -fx-border-radius: 5px; -fx-cursor: hand;" text="View Users" textAlignment="CENTER">
+                    <font>
+                        <Font name="Cambria" size="20.0" />
+                    </font>
+                </Button>
+
+                <TableView fx:id="tableView" layoutX="22.0" layoutY="29.0" prefHeight="403.0" prefWidth="814.0">
+                    <columns>
+                        <TableColumn fx:id="idColumn" prefWidth="84.0" text="ID" />
+                        <TableColumn fx:id="usernameColumn" prefWidth="190.0" text="Username" />
+                        <TableColumn fx:id="genderColumn" prefWidth="181.0" text="Gender" />
+                        <TableColumn fx:id="createdAtColumn" prefWidth="207.0" text="Created At" />
+                        <TableColumn fx:id="updateColumn" prefWidth="151.0" text="Delete" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </children>
+</HBox>
